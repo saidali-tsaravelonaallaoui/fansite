@@ -1,0 +1,388 @@
+@font-face {
+  font-family: 'black_future';
+  src: url('font/black_future.otf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: black_future;
+  background-color: #000000;
+}
+
+
+/* Styles de la barre de navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles des liens dans la barre de navigation */
+nav a {
+  font-family: black_future;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#nom_art {
+  font-size: 50px;
+}
+
+header div {
+  display: block;
+}
+
+#img_header {
+  height: 633px;
+  background-image: url(../img/imgg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img_header_event {
+  height: 320px;
+  background-image: url(../img/imgg_header.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.biographie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  width: 1250px;
+}
+
+.profil p,
+h2 {
+  margin: 20px;
+}
+
+.profil img {
+  width: 350px;
+  height: 350px;
+}
+
+.biographie2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: url(../img/img_renom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 450px;
+}
+
+.biographie2 div {
+  display: block;
+  align-items: flex-start;
+  width: 780px;
+}
+
+
+/* START CSS ACTUALITE */
+
+.actualite {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.actu {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  width: 1155px;
+  max-height: 280px;
+  box-shadow: rgb(251, 251, 251) 6px 2px 16px 0px,
+    rgb(55, 28, 28) -6px -2px 16px 0px;
+}
+
+.actu:hover {
+  box-shadow: 0 10px 50px 0 rgba(255, 255, 255, 0.562)
+}
+
+.actu h2 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.actu h4 {
+  margin-left: 20px;
+}
+
+.actu p {
+  margin: 20px;
+}
+
+.actu img {
+  max-width: 500px;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+/* Styles pour le lien "Lire la suite" */
+.read_more {
+  display: block;
+  margin: 20px;
+  background: none;
+  border: #fff;
+  text-align: inherit;
+  color: #CB1D63;
+  text-decoration: none;
+}
+
+/* END CSS ACTUALITE */
+
+/* START CSS REALISATION */
+
+.realisation {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.real {
+  display: flex;
+  margin: 20px;
+  width: 950px;
+  max-height: 500px;
+  background-color: rgb(235 223 223);
+  box-shadow: rgb(251, 251, 251) 6px 2px 16px 0px,
+    rgb(55, 28, 28) -6px -2px 16px 0px;
+}
+
+.real:hover {
+  box-shadow: 0 10px 50px 0 rgba(255, 255, 255, 0.562)
+}
+
+.real h2,
+h3,
+p {
+  margin: 20px;
+}
+
+.real ol,
+.real h2,
+.real h3,
+.real h4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.real p {
+  margin: 20px;
+}
+
+.real img {
+  max-width: 500px;
+  max-height: 432px;
+  object-fit: contain;
+}
+
+/* END CSS REALISATION */
+
+/* START CSS EVENEMENT */
+
+.evenement {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.event {
+  display: flex;
+  margin: 20px;
+  width: 950px;
+  max-height: 500px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(251, 251, 251) 6px 2px 16px 0px,
+    rgb(55, 28, 28) -6px -2px 16px 0px;
+}
+
+.event:hover {
+  box-shadow: 0 10px 50px 0 rgba(255, 255, 255, 0.562)
+}
+
+.event h2,
+h3,
+p,
+.event h4 {
+  margin: 20px;
+}
+
+.event .event h2,
+.event h3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.event p {
+  margin: 20px;
+}
+
+.event img {
+  max-height: 330px;
+  object-fit: contain;
+}
+
+/* END CSS EVENEMENT */
+
+/* END CSS GALERIE */
+
+.galerie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.galerie h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.galerie video {
+  object-fit: cover;
+}
+
+/* END CSS GALERIE */
+
+/* START CSS CONTACT */
+
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+form {
+  background-color: #ffffff20;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.114);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact_form input,
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container section {
+    flex: 100%;
+    max-width: none;
+  }
+
+  .contact_form form {
+    width: 100%;
+  }
+}
+
+/* END CSS CONTACT */
+
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul, .footerNav li, .footerNav a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.5s;
+  list-style-type: none;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+
+.footerNav a:hover {
+  text-decoration: underline;
+}
